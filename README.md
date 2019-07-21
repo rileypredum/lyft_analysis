@@ -28,9 +28,14 @@ The other packages are intrinsic to Python 3.x and should work with the import s
 ## Layout and file/folder structures
 All baywheels csv's are scraped from the link at the top of this readme.
 
-These data are scraped and compiled in the baywheels-data folder.
+These data are scraped and compiled in the baywheels-data folder (not included for repo size issues).
 
-The `script_for_batch_processing.py` file is used to take any large-scale process that may need to be run on a server or in the cloud.
+To access the data:
+1. Run through `scraping to get all the CSVs.ipynb` and save them to your local directory of choice.
+2. From there you can run `master_df_cleaning.ipynb` if you have lots of RAM, otherwise try `dev_df_data_cleaning.ipynb`.
+**Note:** make sure to update the directory variables to the appropriate path on your computer!
+
+The `server_script.py` file is used to take any large-scale process that may need to be run on a server 
+or in the cloud.
+
 The code in here is intended to be standalone, but does not yet output the resulting file desired.
-
-The `testing reading in the data.ipynb` is the main Jupyter Notebook where I will work on adding data wrangling functionality that is desired/needed for this project.
