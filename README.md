@@ -23,7 +23,7 @@ Please run a virtual environment and install the dependencies listed below:
 2. bs4 (BeautifulSoup)
 3. Jupyter Notebook
 
-The other packages are intrinsic to Python 3.x and should work with the import statements in the code.
+The other packages are native to Python 3.x and should work with the import statements in the code.
 
 ## Layout and file/folder structures
 All baywheels csv's are scraped from the link at the top of this readme.
@@ -35,7 +35,10 @@ To access the data:
 2. From there you can run `master_df_cleaning.ipynb` if you have lots of RAM, otherwise try `dev_df_data_cleaning.ipynb`.
 **Note:** make sure to update the directory variables to the appropriate path on your computer!
 
-The `server_script.py` file is used to take any large-scale process that may need to be run on a server 
-or in the cloud.
+#### *Note:* Go to `Full_Pipeline.ipynb` to see all the code from data cleaning to EDA to statistical tests. 
+This notebook requires the full dataset which was not uploaded to the repo. You can reconstruct it by using the master_df_cleaning  
+notebook mentioned above. Alternatively, if you don't want to do any of that or run cells, you can also view `Full 
+Pipeline Preview (No 
+Coding Required).pdf`.
 
-The code in here is intended to be standalone, but does not yet output the resulting file desired.
+The code in here is intended to be standalone.
